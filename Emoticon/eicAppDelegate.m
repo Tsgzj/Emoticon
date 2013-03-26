@@ -15,4 +15,10 @@
     // Insert code here to initialize your application
 }
 
+-(void)awakeFromNib{
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setTitle:@"Emoticon"];
+    [statusItem setHighlightMode:YES];
+}
+
 @end

@@ -8,7 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface eicAppDelegate : NSObject <NSApplicationDelegate>
+@interface eicAppDelegate : NSObject <NSApplicationDelegate>{
+    NSWindow *window;
+    NSStatusItem * statusItem;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
